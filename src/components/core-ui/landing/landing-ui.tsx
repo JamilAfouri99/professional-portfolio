@@ -66,13 +66,14 @@ function LandingUI({ theme, drawerOpen, classes }: LandingUIPops) {
           className='landing--container-right'
           style={{ backgroundColor: theme.secondary }}>
           <div className='lcr--content' style={{ color: theme.tertiary }}>
-            {/* <h6 style={{ color: theme.primary }}>{headerData.title}</h6> */}
+            <h6 style={{ color: theme.primary, textAlign:'center' }}>{headerData.title}</h6>
             <h1>{headerData.name}</h1>
             <Typed
               strings={[
-                "Backend Developer",
+                "Software Engineer",
                 "Frontend Developer",
                 "Fullstack Developer",
+                "React / Flutter Developer",
               ]}
               typeSpeed={40}
               backSpeed={50}

@@ -103,14 +103,14 @@ function NavbarUI({
               </div>
             </Fade>
 
-            <Fade left>
+            {/* <Fade left>
               <NavLink to='/#blog' smooth={true}>
                 <div className={classes.drawerItem}>
                   <FaFolderOpen className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Blog</span>
                 </div>
               </NavLink>
-            </Fade>
+            </Fade> */}
 
             <Fade left>
               <NavLink to='/#contacts' smooth={true}>
