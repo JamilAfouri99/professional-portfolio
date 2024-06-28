@@ -5,10 +5,20 @@ import { ProjectDataType } from "../types/data-type";
 // import eight from "../assets/svg/projects/eight.svg";
 // import one from "../assets/svg/projects/one.svg";
 // import six from "../assets/svg/projects/six.svg";
-// import three from "../assets/svg/projects/three.svg";
+import three from "../assets/svg/projects/three.svg";
 // import two from "../assets/svg/projects/two.svg";
 
 export const projectsData: ProjectDataType[] = [
+  {
+    id: 0,
+    projectName: "GTUPE",
+    projectDesc:
+      "This project is a platform funded by the ILO, designed to fully digitize the process of creating contracts for workers in Jordan's private education sector, ensuring speed and security.",
+    tags: ["Next.js", "Redux", "Typescript", "NestJS"],
+    code: "https://gtupe.org/",
+    demo: "https://gtupe.org/",
+    image: three,
+  },
   {
     id: 1,
     projectName: "Smart Restaurant",

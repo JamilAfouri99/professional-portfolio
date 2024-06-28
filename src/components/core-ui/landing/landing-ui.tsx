@@ -9,45 +9,46 @@ import "./landing.css";
 
 function LandingUI({ theme, drawerOpen, classes }: LandingUIPops) {
   return (
-    <div className='landing' style={{ backgroundColor: theme.quaternary }}>
-      <div className='landing--container'>
+    <div className="landing" style={{ backgroundColor: theme.quaternary }}>
+      <div className="landing--container">
         <div
-          className='landing--container-left'
-          style={{ backgroundColor: theme.quaternary }}>
-          <div className='lcl--content'>
+          className="landing--container-left"
+          style={{ backgroundColor: theme.quaternary }}
+        >
+          <div className="lcl--content">
             {socialsData.linkedIn && (
-              <a href={socialsData.linkedIn} target='_blank' rel='noreferrer'>
+              <a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
                 <FaLinkedin
-                  className='landing--social linkedin-icon'
+                  className="landing--social linkedin-icon"
                   style={{ color: theme.primary }}
-                  aria-label='LinkedIn'
+                  aria-label="LinkedIn"
                 />
               </a>
             )}
             {socialsData.github && (
-              <a href={socialsData.github} target='_blank' rel='noreferrer'>
+              <a href={socialsData.github} target="_blank" rel="noreferrer">
                 <FaGithub
-                  className='landing--social'
+                  className="landing--social"
                   style={{ color: theme.primary }}
-                  aria-label='GitHub'
+                  aria-label="GitHub"
                 />
               </a>
             )}
             {socialsData.twitter && (
-              <a href={socialsData.twitter} target='_blank' rel='noreferrer'>
+              <a href={socialsData.twitter} target="_blank" rel="noreferrer">
                 <FaTwitter
-                  className='landing--social twitter-icon'
+                  className="landing--social twitter-icon"
                   style={{ color: theme.primary }}
-                  aria-label='Twitter'
+                  aria-label="Twitter"
                 />
               </a>
             )}
             {socialsData.facebook && (
-              <a href={socialsData.facebook} target='_blank' rel='noreferrer'>
+              <a href={socialsData.facebook} target="_blank" rel="noreferrer">
                 <FaFacebook
-                  className='landing--social facebook-icon'
+                  className="landing--social facebook-icon"
                   style={{ color: theme.primary }}
-                  aria-label='facebook'
+                  aria-label="facebook"
                 />
               </a>
             )}
@@ -55,45 +56,48 @@ function LandingUI({ theme, drawerOpen, classes }: LandingUIPops) {
         </div>
         <img
           src={headerData.image}
-          alt=''
-          className='landing--img'
+          alt=""
+          className="landing--img"
           style={{
             opacity: `${drawerOpen ? "0" : "1"}`,
             borderColor: theme.primary,
           }}
         />
         <div
-          className='landing--container-right'
-          style={{ backgroundColor: theme.secondary }}>
-          <div className='lcr--content' style={{ color: theme.tertiary }}>
-            <h6 style={{ color: theme.primary, textAlign:'center' }}>{headerData.title}</h6>
-            <h1>{headerData.name}</h1>
+          className="landing--container-right"
+          style={{ backgroundColor: theme.secondary }}
+        >
+          <div className="lcr--content" style={{ color: theme.tertiary }}>
+            <h6 style={{ color: theme.primary, textAlign: "left" }}>
+              {headerData.title}
+            </h6>
+            <h1 style={{ textAlign: "left" }}>{headerData.name}</h1>
             <Typed
-              strings={[
-                "Software Engineer",
-                "Frontend Developer",
-                "Fullstack Developer",
-                "React / Flutter Developer",
-              ]}
+              strings={["Software Engineer", "Sr.Frontend Developer"]}
               typeSpeed={40}
               backSpeed={50}
-              className='typed-header'
-              style={{ color: theme.primary, fontSize: "20px" }}
+              className="typed-header"
+              style={{
+                color: theme.primary,
+                fontSize: "20px",
+                textAlign: "left",
+              }}
               loop
             />
-            <p>{headerData.desciption}</p>
+            <p style={{ textAlign: "left" }}>{headerData.desciption}</p>
 
-            <div className='lcr-buttonContainer'>
+            <div className="lcr-buttonContainer">
               {headerData.resumePdf && (
                 <a
                   href={headerData.resumePdf}
-                  download='resume'
-                  target='_blank'
-                  rel='noreferrer'>
-                  <button className={classes.resumeBtn}>Download CV</button>
+                  download="resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className={classes.resumeBtn}>View CV</button>
                 </a>
               )}
-              <NavLink to='/#contacts' smooth={true}>
+              <NavLink to="/#contacts" smooth={true}>
                 <button className={classes.contactBtn}>Contact</button>
               </NavLink>
             </div>

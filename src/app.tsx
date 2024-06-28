@@ -12,7 +12,7 @@ import BackToTop from "./components/helper/back-to-top/back-to-top";
 import ChangeTheme from "./components/helper/change-theme/change-theme";
 import ScrollToTop from "./components/helper/scroll-to-top";
 import { ThemeContext } from "./contexts/theme-context";
-import { BlogPage, HomePage, ProjectPage } from "./pages";
+import { HomePage, ProjectPage } from "./pages";
 import { ContextValuesTypes } from "./types";
 
 function App() {

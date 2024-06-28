@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-## A professional portfolio, a friendly and responsive website that showcases my skills, accomplishments, and experiences. It offers a seamless user experience, adapting to different devices and screen sizes. This visually appealing and intuitive platform allows visitors to easily navigate and explore my work, providing valuable insights into my professional journey.
+## A friendly and responsive website that showcases my skills, accomplishments, and experiences. It offers a seamless user experience, adapting to different devices and screen sizes. This visually appealing and intuitive platform allows visitors to easily navigate and explore my work, providing valuable insights into my professional journey.
 
 ---
 
